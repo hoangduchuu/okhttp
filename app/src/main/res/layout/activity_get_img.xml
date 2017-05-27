@@ -4,19 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.hoang.testokhttp.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.example.hoang.testokhttp.GetImgActivity">
 
-    <Button
-        android:id="@+id/btnGetUrl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="getUrl"
-        android:text="getIMG" />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        android:background="@color/colorAccent" />
 
     <Button
         android:onClick="getImg"
-        android:id="@+id/btngetImg"
+        android:id="@+id/BtngetImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="getIMG" />
+        android:text="BtngetImg" />
+
+
 </LinearLayout>

@@ -30,8 +30,10 @@ public class MainActivity extends AppCompatActivity {
     public void getUrl(View view) {
         Intent i = new Intent(MainActivity.this, GetUrlActivity.class);
         startActivity(i);
-
-        Toast.makeText(this, "getuRL", Toast.LENGTH_SHORT).show();
     }
 
+    public void getImg(View view) {
+        Intent i = new Intent(MainActivity.this, GetImgActivity.class);
+        startActivity(i);
+    }
 }
