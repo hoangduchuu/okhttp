@@ -26,7 +26,6 @@ public class GetImgActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_img);
-
         imageView = (ImageView) findViewById(R.id.img);
         btnGetImg = (Button) findViewById(R.id.BtngetImg);
         url = (EditText) findViewById(R.id.imgUrl);

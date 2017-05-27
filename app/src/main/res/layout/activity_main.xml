@@ -4,28 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.hoang.testokhttp.MainActivity">
 
 
-    <Button
-        android:id="@+id/btnGetUrl"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="getUrl"
-        android:text="getIMG" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btngetImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="getImg"
-        android:text="getIMG" />
+        <Button
+            android:id="@+id/btnGetUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getUrl"
+            android:text="getIMG" />
+
+        <Button
+            android:id="@+id/btngetImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="getImg"
+            android:text="getIMG" />
 
 
-    <Button
-        android:id="@+id/btnPostUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="btnPostUser"
-        android:text="btnPostUser" />
+        <Button
+            android:id="@+id/btnPostUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnPostUser"
+            android:text="btnPostUser" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivMain"
+        android:layout_width="202sp"
+        android:layout_height="200sp" />
+
+    <ImageView
+        android:id="@+id/ivMain2"
+        android:layout_width="200sp"
+        android:layout_height="200sp" />
 </LinearLayout>
