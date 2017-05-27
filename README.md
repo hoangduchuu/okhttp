@@ -11,7 +11,7 @@
 
 ### Buid request
      Request.Builder builder = new Request.Builder();
-                builder.url(params[0]);
+                builder.url(BASE_URL);
                 Request request = builder.build();
 
 ## Hold your response
