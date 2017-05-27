@@ -9,6 +9,7 @@
 
 
     <EditText
+        android:text="http://vnexpress.net"
         android:id="@+id/edtUrl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context="com.example.hoang.testokhttp.GetImgActivity">
 
+    <EditText
+        android:text="@string/img_url"
+        android:id="@+id/imgUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL" />
+
     <ImageView
         android:id="@+id/img"
         android:layout_width="300sp"
@@ -16,10 +23,10 @@
         android:background="@color/colorAccent" />
 
     <Button
-        android:onClick="getImg"
         android:id="@+id/BtngetImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="getImg"
         android:text="BtngetImg" />
 
 

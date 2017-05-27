@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TestOkHttp</string>
+    <string name="img_url"><![CDATA[https://avatars1.githubusercontent.com/u/15043682?v=3&s=460]]></string>
 </resources>

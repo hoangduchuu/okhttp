@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import java.io.IOException;
@@ -19,6 +20,7 @@ public class GetImgActivity extends AppCompatActivity {
 
     ImageView imageView;
     Button btnGetImg;
+    EditText url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +29,16 @@ public class GetImgActivity extends AppCompatActivity {
 
         imageView = (ImageView) findViewById(R.id.img);
         btnGetImg = (Button) findViewById(R.id.BtngetImg);
+        url = (EditText) findViewById(R.id.imgUrl);
     }
 
     public void getImg(View view) {
-        new GetIMG().execute("https://avatars1.githubusercontent.com/u/15043682?v=3&s=460");
+        new GetIMG().execute(url.getText().toString().trim());
     }
 
     class GetIMG extends AsyncTask<String, Void, byte[]> {
         OkHttpClient httpClient = new OkHttpClient.Builder()
                 .build();
-
 
         @Override
         protected byte[] doInBackground(String... params) {
@@ -51,7 +53,6 @@ public class GetImgActivity extends AppCompatActivity {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
             return null;
         }
 
@@ -64,4 +65,5 @@ public class GetImgActivity extends AppCompatActivity {
             super.onPostExecute(bytes);
         }
     }
+
 }

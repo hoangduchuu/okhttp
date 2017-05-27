@@ -8,6 +8,15 @@
     tools:context="com.example.hoang.testokhttp.PostUserActivity">
 
     <EditText
+        android:id="@+id/edtUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2sp"
+        android:hint="url"
+        android:text="http://vnexpress.net" />
+
+
+    <EditText
         android:id="@+id/edtPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,10 +29,10 @@
         android:hint="Pass" />
 
     <Button
-        android:onClick="PostUser"
         android:id="@+id/btnSendUP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="PostUser"
         android:text="Send" />
 
 </LinearLayout>

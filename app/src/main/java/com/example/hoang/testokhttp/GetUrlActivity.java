@@ -37,7 +37,7 @@ public class GetUrlActivity extends AppCompatActivity {
     }
 
     public void getUrl(View view) {
-        new GetURL().execute("http://vnexpress.net");
+        new GetURL().execute(tvUrl.getText().toString().trim());
     }
 
     class GetURL extends AsyncTask<String, String, String> {
