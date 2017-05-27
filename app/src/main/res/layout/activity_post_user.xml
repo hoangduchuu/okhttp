@@ -4,27 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.hoang.testokhttp.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.example.hoang.testokhttp.PostUserActivity">
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User" />
+
+    <EditText
+        android:id="@+id/edtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pass" />
 
     <Button
-        android:id="@+id/btnGetUrl"
+        android:onClick="PostUser"
+        android:id="@+id/btnSendUP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="getUrl"
-        android:text="getIMG" />
+        android:text="Send" />
 
-    <Button
-        android:id="@+id/btngetImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="getImg"
-        android:text="getIMG" />
-
-
-    <Button
-        android:id="@+id/btnPostUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="btnPostUser"
-        android:text="btnPostUser" />
 </LinearLayout>

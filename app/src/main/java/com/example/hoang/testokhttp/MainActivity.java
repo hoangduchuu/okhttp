@@ -16,7 +16,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
-    Button btngetUrl, btnGetImg;
+    Button btngetUrl, btnGetImg, btnPostUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void getImg(View view) {
         Intent i = new Intent(MainActivity.this, GetImgActivity.class);
+        startActivity(i);
+    }
+
+    public void btnPostUser(View view) {
+        Intent i = new Intent(MainActivity.this, PostUserActivity.class);
         startActivity(i);
     }
 }

@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GetUrlActivity" />
-        <activity android:name=".GetImgActivity"></activity>
+        <activity android:name=".GetImgActivity" />
+        <activity android:name=".PostUserActivity"></activity>
     </application>
 
 </manifest>
